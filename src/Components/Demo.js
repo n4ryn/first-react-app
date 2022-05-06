@@ -1,9 +1,13 @@
-import "./Demo.css";
+// import style from './Demo.css';
+// import "./Demo.css";
+import Button from "./Button";
 
 const Demo = () => {
+    const fontstyle = {color: 'red'}
     return (
       <>
-        <h2>May the 4th be with you!</h2>
+        <h1 style = {fontstyle}>Hi</h1>
+        <Button></Button>
       </>
     );
   }
