@@ -3,7 +3,7 @@ import styles from './Button.module.css';
 const Button = () => {
     let [text, setText] = useState('hi');
     const onTest = () => {
-      console.log('abc');
+      // console.log('abc');
       text = 'test';
       setText('Hello');
     }

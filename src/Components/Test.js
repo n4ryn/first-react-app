@@ -2,10 +2,12 @@
 import Demo from "./Demo";
 
 const Test = () => {
+    const name = 'aada';
     return (
       <>
         <h1>Hello</h1>
-        <Demo></Demo>
+        <Demo fname={name} lname='xyz' age='1'/>
+        <h2>{name}</h2>
       </>
     );
   }
