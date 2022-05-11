@@ -1,26 +1,26 @@
-import {React, useState} from 'react';
+// import {React, useState} from 'react';
 // import style from './Demo.css';
 // import "./Demo.css";
-import Button from "./Button";
+// import Button from "./Button";
+import Card from "./Card";
 
 function Demo (props) {
-    const fontstyle = {color: 'red'}
-    // console.log(props);
-    let [textName, setTextName] = useState('');
-    const getInputValue = (e) => {
-      // console.log('abc');
-      console.log(e.target.value);
-      // text = 'test';
-      // setText('Hello');
-      setTextName(e.target.value);
-    }
+    console.log("props data", props.data);
+    // let name = props.name;
+    const demoData = props.data
+    // const fontstyle = {color: 'red'}
+    console.log(props);
+    
 
     return (
       <>
-        <h1 style = {fontstyle}>Hi</h1>
+        {/* <h1 style = {fontstyle}>Hi</h1>
         <input type='text' placeholder='Enter Text' onChange={getInputValue}></input>
         <h1>{textName}</h1>
-        <Button></Button>
+        <Button/> */}
+        {demoData.map((val, i)=>
+          <Card title={val.title} id={val.id} body={val.body}/>
+        )}
       </>
     );
   }
